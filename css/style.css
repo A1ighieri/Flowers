@@ -1,0 +1,502 @@
+@font-face {
+  font-family: "Gotham Pro Light";
+  src: url("../fonts/GothamPro-Light.woff") format("woff");
+  font-weight: "normal";
+  font-style: "normal";
+}
+@font-face {
+  font-family: "Gotham Pro Medium";
+  src: url("../fonts/GothamPro-Medium.woff") format("woff");
+  font-weight: "normal";
+  font-style: "normal";
+}
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("../fonts/GothamPro.woff") format("woff");
+  font-weight: "normal";
+  font-style: "normal";
+}
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+body {
+  background-color: #292929;
+  color: #fff;
+  font-family: "Gotham Pro" sans-serif;
+  margin: 0;
+}
+
+.header {
+  padding-top: 50px;
+}
+.header-description {
+  font-family: "Gotham Pro Light";
+  letter-spacing: 0.12px;
+  font-size: 12px;
+}
+.text-color-red {
+  color: #ff3469;
+  font-family: "Gotham Pro Medium";
+}
+.header-phone {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: right;
+  font-weight: 500;
+  display: block;
+}
+.header-info {
+  font-family: "Gotham Pro";
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 7px;
+  display: block;
+  text-align: right;
+}
+.callback {
+  color: #ff3469;
+  text-align: right;
+  display: block;
+  margin-top: 16px;
+  font-size: 16px;
+}
+.flowers-slider {
+  width: 100%;
+  text-align: center;
+}
+.sbn-1 {
+  color: #ff2e55;
+}
+.hero {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 77px;
+  border-bottom: 1px solid #4c4c4c;
+}
+.hero-title {
+  margin: auto;
+  font-family: "Gotham Pro Medium";
+  font-size: 34px;
+  text-transform: uppercase;
+  letter-spacing: 0.34px;
+  margin-bottom: 33px;
+  max-width: 750px;
+}
+.hero-description {
+  margin: auto;
+  font-family: "Gotham Pro Light";
+  font-size: 18px;
+  letter-spacing: 0.18px;
+  text-transform: uppercase;
+  line-height: 1.4;
+  margin-bottom: 87px;
+  max-width: 600px;
+}
+:root {
+  --swiper-navigation-size: 18px;
+  --swiper-navigation-color: grey;
+}
+
+.hero-cta {
+  font-family: "Gotham Pro";
+  font-size: 19px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.19px;
+  margin-bottom: 36px;
+  margin-top: 83px;
+  display: block;
+  font-family: "Gotham Pro Light";
+}
+
+.button {
+  font-family: "Gotham Pro";
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.18px;
+  color: #fff;
+  background-color: #ff2e55;
+  padding-top: 30px;
+  padding-bottom: 26px;
+  padding-left: 65px;
+  padding-right: 65px;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+}
+.reviews-slider {
+  margin-top: 98px;
+}
+.reviews {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+/* отступ от стрелочек */
+.review-slide {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.review-image {
+  width: 220px;
+  height: 220px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  font-size: 20px;
+  font-family: "Gotham Pro Light";
+  /* смотри в псевдоэлемент */
+  position: relative;
+  margin-right: 50px;
+}
+.review-image:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  /* прозрачность */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* чтобы не смещала текст */
+  position: absolute;
+}
+
+/* все, что внутри */
+.review-image > * {
+  position: relative;
+}
+
+.review-image-1 {
+  background: #000 url("../img/reviews/review-1.jpg");
+}
+
+.review-image-2 {
+  background: #000 url("../img/reviews/review-2.jpg");
+}
+.review-name {
+  margin-bottom: 7px;
+}
+
+.review-text {
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 0.18px;
+  font-family: "Gotham Pro Light";
+}
+.review-link {
+  color: #f24841;
+}
+.section-title {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.7px;
+  font-family: "Gotham Pro Light";
+}
+.sb-2 {
+  color: #f24841;
+  width: 21px;
+  height: 34px;
+}
+.advantages {
+  text-align: center;
+  padding-bottom: 100px;
+  padding-top: 50px;
+  border-bottom: 1px solid #4c4c4c;
+}
+.advantages-wrapper {
+  min-height: 80px;
+  margin-bottom: 30px;
+}
+.advantages-title {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: "Gotham Pro";
+  line-height: 1.4;
+}
+
+.goods {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.section-description {
+  font-size: 18px;
+  text-align: center;
+  font-family: "Gotham Pro Light";
+  letter-spacing: 0.18px;
+}
+.card {
+  text-align: center;
+  border: 3px solid #fff;
+  padding: 33px 35px 30px 35px;
+  margin-top: 27px;
+  font-family: "Gotham Pro Light";
+  letter-spacing: 0.14px;
+}
+.card-title {
+  margin-top: 23px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.card-title-rose {
+  margin-top: 33px;
+}
+.card-title-astra {
+  margin-top: 27px;
+}
+.card-title-fialka {
+  margin-top: 29px;
+}
+.card-title-rose-red {
+  margin-top: 22px;
+}
+.card-title-lepestki {
+  margin-top: 38px;
+}
+.card-label {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 7px;
+  margin-top: 20px;
+}
+.color-label {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.color-input {
+  opacity: 0;
+  /* прозрачность */
+  visibility: hidden;
+  position: absolute;
+  z-index: -9;
+  /* скрытие инпутов */
+}
+.color-label.white {
+  background-color: #fff;
+}
+.color-label.biege {
+  background-color: #f7b496;
+}
+.color-label.pink {
+  background-color: #ed366e;
+}
+.color-label.red {
+  background-color: #ff0000;
+}
+.color-label.blue {
+  background-color: #12129d;
+}
+
+.counter-input {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  color: #fff;
+  background-color: #292929;
+  margin-left: 15px;
+  margin-right: 15px;
+  border: 2px #fff solid;
+}
+
+.counter-button {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  background-color: #292929;
+}
+.card-button {
+  font-size: 14px;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 13px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #f24841;
+}
+.more {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 39px;
+  padding: 10px;
+  display: block;
+  color: #f24841;
+  font: "Gotham Pro";
+}
+
+.text-red {
+  color: #ff1844;
+}
+
+.more:after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 4px;
+  background: url(../img/caret.svg) no-repeat center;
+  vertical-align: middle;
+  margin-left: 14px;
+}
+
+.offer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: #1a1a1a;
+  text-align: center;
+  font-family: "Gotham Pro";
+}
+
+.offer-link {
+  text-transform: uppercase;
+  display: block;
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 65px;
+}
+.offer-label {
+  display: block;
+  margin-bottom: 22px;
+  font-size: 14px;
+}
+
+.offer-phone {
+  text-decoration: none;
+  font-size: 36px;
+  color: #fff;
+}
+
+.footer-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-menu-link {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.footer-menu-item {
+  margin-right: 30px;
+  margin-bottom: 33px;
+}
+
+.social {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+.footer-label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 12px;
+  font-family: "Gotham Pro";
+}
+
+.footer-info {
+  text-align: right;
+}
+
+.footer-phone {
+  text-decoration: none;
+  display: block;
+  font-size: 24px;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.footer-part-2 {
+  background-color: #fff;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin: 0;
+}
+
+.footer-description {
+  color: #292929;
+  display: block;
+  font-size: 12px;
+  padding-left: 62px;
+}
+.author {
+  color: #292929;
+  display: block;
+  font-size: 12px;
+}
+.author-link {
+  color: #292929;
+}
+
+@media (max-width: 768px) {
+  .header {
+    text-align: center;
+  }
+  .header-contacts {
+    text-align: center;
+  }
+  .hero-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  .hero {
+    padding-top: 50px;
+  }
+  .hero-description {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .button {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  .colors {
+    max-width: 200px;
+    margin: auto;
+  }
+  .card-label {
+    margin: 20px auto;
+    display: block;
+  }
+  .offer {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-info {
+    text-align: left;
+  }
+}
+
+.review-link {
+  padding: 20px;
+}
+
+.modal {
+  display: none;
+}
+
+.modal-title {
+  color: #292929;
+}
+
+.modal-input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+}
+.modal-button {
+  padding: 20px;
+  width: 100%;
+  margin-top: 15px;
+}
